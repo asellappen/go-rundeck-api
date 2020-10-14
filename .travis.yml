@@ -5,3 +5,8 @@ arch:
 go:
   - 1.4
   - tip
+env:
+  global:
+    - GO111MODULE=on
+    - GOFLAGS='-mod vendor'
+    - PATH=${TRAVIS_BUILD_DIR}/bin:${PATH}
